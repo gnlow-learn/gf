@@ -1,19 +1,20 @@
-concrete FoodEng of Food = {
+concrete FoodEng of Food = open StringOper in {
     lincat
         Phrase, Item, Kind, Quality = {s: Str};
     
     lin
-        Is item quality = {s = item.s ++ "is" ++ quality.s};
-        This kind = {s = "this" ++ kind.s};
-        QKind quality kind = {s = quality.s ++ kind.s};
-        Wine = {s = "wine"};
-        Cheese = {s = "cheese"};
-        Fish = {s = "fish"};
-        Very quality = {s = "very" ++ quality.s};
-        Fresh = {s = "fresh"};
-        Warm = {s = "warm"};
-        Italian = {s = "Italian"};
-        Expensive = {s = "expensive"};
-        Delicious = {s = "delicious"};
-        Boring = {s = "boring"};
+        Is item quality = ss (item.s ++ "is" ++ quality.s);
+        This = prefix "this";
+        That = prefix "that";
+        QKind quality kind = cc quality kind;
+        Wine = ss "wine";
+        Cheese = ss "cheese";
+        Fish = ss "fish";
+        Very = prefix "very";
+        Fresh = ss "fresh";
+        Warm = ss "warm";
+        Italian = ss "Italian";
+        Expensive = ss "expensive";
+        Delicious = ss "delicious";
+        Boring = ss "boring";
 }
