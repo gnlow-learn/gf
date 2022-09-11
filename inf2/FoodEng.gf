@@ -1,15 +1,19 @@
 concrete FoodEng of Food = open Prelude in {
     lincat
-        S, Quality = SS;
+        Quality = SS;
         Kind = {s: Number => Str};
         Item = {s: Str; n: Number};
     
     lin
         Is item quality = ss (item.s ++ copula item.n ++ quality.s);
+
         This = det Sg "this";
         That = det Sg "that";
         These = det Pl "these";
         Those = det Pl "those";
+        A = det Sg "a";
+        The = det (Sg | Pl) "the";
+
         QKind quality kind = {s = table {
             n => quality.s ++ kind.s ! n
         }};

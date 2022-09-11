@@ -6,7 +6,9 @@ abstract Food = {
     
     fun
         Is: Item -> Quality -> Phrase;
-        This, That: Kind -> Item;
+        This, That, These, Those, A, The
+            : Kind -> Item
+            ;
         QKind: Quality -> Kind -> Kind;
         Wine, Cheese, Fish: Kind;
         Very: Quality -> Quality;
