@@ -1,4 +1,9 @@
 concrete FoodsEng of Foods
-    = FoodsI with
+    = FoodsI - [Pizza]
+    with
         (Syntax = SyntaxEng),
-        (LexFoods = LexFoodsEng);
+        (LexFoods = LexFoodsEng)
+        **
+            open SyntaxEng, ParadigmsEng in {
+                lin Pizza = mkCN (mkA "Italian") (mkN "pie");
+            }

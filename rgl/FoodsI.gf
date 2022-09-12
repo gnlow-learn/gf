@@ -1,4 +1,4 @@
-    --# -path=.:../foods
+ --# -path=.:../foods:alltenses
   
     incomplete concrete FoodsI of Foods = open Syntax, LexFoods in {
     lincat
