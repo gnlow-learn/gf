@@ -1,8 +1,14 @@
 # learn-gf
+## 링크
+- https://www.grammaticalframework.org/
+- 설치: https://www.grammaticalframework.org/download/index-3.11.html
+- RGL 다운로드: https://github.com/GrammaticalFramework/gf-core/releases/tag/3.11
+- 튜토리얼: https://www.grammaticalframework.org/doc/tutorial/gf-tutorial.html
+- 번역기 데모: https://cloud.grammaticalframework.org/minibar/minibar.html
 ## 실행방법
 ### 폴더로 이동
 ```
-cd rgl
+cd 4_rgl
 ```
 ### 실행
 ```sh
